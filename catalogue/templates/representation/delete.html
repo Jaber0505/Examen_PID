@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<p>⚠️ Êtes-vous sûr de vouloir supprimer la représentation du spectacle 
+<strong>{{ representation.show.title }}</strong> 
+le <strong>{{ representation.schedule|date:"d/m/Y H:i" }}</strong> 
+à <strong>{{ representation.location.designation }}</strong> ?</p>
+
+<form method="post" class="form-actions">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">🗑 Supprimer</button>
+    <a href="{% url 'catalogue:representation-show' representation.id %}" class="btn btn-secondary">❌ Annuler</a>
+</form>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tarif</th>
+                <th>Quantité</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for form_item in formset.forms %}
+            <tr>
+                <td>{{ form_item.display_price.value }}</td>
+                <td>
+                    {{ form_item.quantity }}
+                    {{ form_item.price }}
+                    {% if form_item.quantity.errors %}
+                        <div class="text-danger">{{ form_item.quantity.errors }}</div>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-success">💾 Enregistrer</button>
+        <a href="{% url 'catalogue:reservation-show' reservation.id %}" class="btn btn-danger">❌ Annuler</a>
+    </div>
+</form>
+{% endblock %}

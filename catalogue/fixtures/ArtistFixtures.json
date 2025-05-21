@@ -1,0 +1,82 @@
+[
+  {
+    "model": "catalogue.artist",
+    "pk": 1,
+    "fields": {
+      "first_name": "Danielle",
+      "last_name": "Camus"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 2,
+    "fields": {
+      "first_name": "Franck",
+      "last_name": "Hernandez"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 3,
+    "fields": {
+      "first_name": "Françoise",
+      "last_name": "Klein"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 4,
+    "fields": {
+      "first_name": "Maryse",
+      "last_name": "Denis"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 5,
+    "fields": {
+      "first_name": "Emmanuelle",
+      "last_name": "Le Roux"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 6,
+    "fields": {
+      "first_name": "Sylvie",
+      "last_name": "Gimenez"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 7,
+    "fields": {
+      "first_name": "Lucas",
+      "last_name": "Marion"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 8,
+    "fields": {
+      "first_name": "Emmanuelle",
+      "last_name": "Coste"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 9,
+    "fields": {
+      "first_name": "Sébastien",
+      "last_name": "Hebert"
+    }
+  },
+  {
+    "model": "catalogue.artist",
+    "pk": 10,
+    "fields": {
+      "first_name": "Éric",
+      "last_name": "Godard"
+    }
+  }
+]

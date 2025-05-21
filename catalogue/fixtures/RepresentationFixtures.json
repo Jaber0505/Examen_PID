@@ -1,0 +1,47 @@
+[
+  {
+    "model": "catalogue.representation",
+    "pk": 1,
+    "fields": {
+      "show": ["le-confort-datteindre-vos-buts-a-letat-pur"],
+      "schedule": "2025-05-19T20:00:00",
+      "location": ["michel-sa", "https://michel-sa.com"]
+    }
+  },
+  {
+    "model": "catalogue.representation",
+    "pk": 2,
+    "fields": {
+      "show": ["lart-datteindre-vos-buts-a-la-pointe"],
+      "schedule": "2025-05-20T20:00:00",
+      "location": ["ferreira", "https://ferreira.be"]
+    }
+  },
+  {
+    "model": "catalogue.representation",
+    "pk": 3,
+    "fields": {
+      "show": ["la-liberte-de-louer-plus-rapidement"],
+      "schedule": "2025-05-21T20:00:00",
+      "location": ["lacroix", "https://lacroix.be"]
+    }
+  },
+  {
+    "model": "catalogue.representation",
+    "pk": 4,
+    "fields": {
+      "show": ["le-droit-datteindre-vos-buts-a-letat-pur"],
+      "schedule": "2025-05-22T20:00:00",
+      "location": ["legendre", "https://legendre.org"]
+    }
+  },
+  {
+    "model": "catalogue.representation",
+    "pk": 5,
+    "fields": {
+      "show": ["la-possibilite-de-louer-plus-facilement"],
+      "schedule": "2025-05-23T20:00:00",
+      "location": ["nguyen", "https://nguyen.be"]
+    }
+  }
+]

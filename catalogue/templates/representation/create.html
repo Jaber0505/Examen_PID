@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Ajouter une représentation{% endblock %}
+
+{% block content %}
+<h2>Ajouter une représentation</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-success">💾 Enregistrer</button>
+        <a href="{% url 'catalogue:representation-index' %}" class="btn btn-danger">Annuler</a>
+    </div>
+</form>
+
+{% endblock %}

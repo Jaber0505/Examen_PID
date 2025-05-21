@@ -1,0 +1,42 @@
+<!-- catalogue/templates/artist/show.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="form-actions">
+        <a href="{% url 'catalogue:artist-edit' artist.id %}" class="btn btn-primary">✏️ Modifier</a>
+        <a href="{% url 'catalogue:artist-delete' artist.id %}" class="btn btn-danger">🗑 Supprimer</a>
+    </div>
+    
+    <h2>{% block title %}{{ title }}{% endblock %}</h2>
+
+    <p><strong>Prénom :</strong> {{ artist.first_name }}</p>
+    <p><strong>Nom :</strong> {{ artist.last_name }}</p>
+
+    <hr>
+
+    <h3>🧑‍🎨 Type d'artiste :</h3>
+    <ul>
+        {% for at in types %}
+            <li>{{ at.type }}</li>
+        {% empty %}
+            <li>Ne posséde aucun rôle</li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+    
+    <h3>🎬 Participations artistiques</h3>
+    <ul>
+        {% for link in participations %}
+            <li><a href="{% url 'catalogue:show-show' link.show.slug %}">{{ link.show.title }}</a></li>
+        {% empty %}
+            <li>Aucune participation enregistrée.</li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+
+    <div class="form-actions">
+        <a href="{% url 'catalogue:artist-index' %}" class="btn btn-secondary">🔙 Retour à la liste</a>
+    </div>
+{% endblock %}

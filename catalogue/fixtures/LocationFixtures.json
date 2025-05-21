@@ -1,0 +1,122 @@
+[
+  {
+    "model": "catalogue.location",
+    "pk": 1,
+    "fields": {
+      "slug": "michel-sa",
+      "designation": "Michel SA",
+      "address": "rue de Seguin 216",
+      "website": "https://michel-sa.com",
+      "phone": "+32 2 123 4561",
+      "locality": ["1000", "Prévost-sur-Mer"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 2,
+    "fields": {
+      "slug": "ferreira",
+      "designation": "Ferreira",
+      "address": "boulevard Simon 22",
+      "website": "https://ferreira.be",
+      "phone": "+32 2 123 4562",
+      "locality": ["1001", "Gonzalez"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 3,
+    "fields": {
+      "slug": "lacroix",
+      "designation": "Lacroix",
+      "address": "rue de Potier 9",
+      "website": "https://lacroix.be",
+      "phone": "+32 2 123 4563",
+      "locality": ["1002", "Lemoine"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 4,
+    "fields": {
+      "slug": "legendre",
+      "designation": "Legendre",
+      "address": "chemin Muller 51",
+      "website": "https://legendre.org",
+      "phone": "+32 2 123 4564",
+      "locality": ["1003", "Sainte Christelle"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 5,
+    "fields": {
+      "slug": "nguyen",
+      "designation": "Nguyen",
+      "address": "rue Gaudin 20",
+      "website": "https://nguyen.be",
+      "phone": "+32 2 123 4565",
+      "locality": ["1004", "Saint Margaret-les-Bains"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 6,
+    "fields": {
+      "slug": "bourgeois",
+      "designation": "Bourgeois",
+      "address": "chemin Nath Lelièvre 123",
+      "website": "https://bourgeois.net",
+      "phone": "+32 2 123 4566",
+      "locality": ["1005", "Morel"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 7,
+    "fields": {
+      "slug": "renard-le-goff-sas",
+      "designation": "Renard Le Goff S.A.S.",
+      "address": "rue Jeannine Pichon 80",
+      "website": "https://renard-legoff.be",
+      "phone": "+32 2 123 4567",
+      "locality": ["1006", "Sainte Virginie-la-Forêt"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 8,
+    "fields": {
+      "slug": "colas",
+      "designation": "Colas",
+      "address": "chemin de Delahaye 56",
+      "website": "https://colas.com",
+      "phone": "+32 2 123 4568",
+      "locality": ["1007", "Huet-sur-Mer"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 9,
+    "fields": {
+      "slug": "guilbert-blot-sa",
+      "designation": "Guilbert Blot SA",
+      "address": "rue Xavier Rousset 9",
+      "website": "https://guilbert-blot.be",
+      "phone": "+32 2 123 4569",
+      "locality": ["1008", "Humbert-sur-Delorme"]
+    }
+  },
+  {
+    "model": "catalogue.location",
+    "pk": 10,
+    "fields": {
+      "slug": "dufour",
+      "designation": "Dufour",
+      "address": "avenue Benard 345",
+      "website": "https://dufour.be",
+      "phone": "+32 2 123 4570",
+      "locality": ["1009", "Lebreton"]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<a href="{% url 'catalogue:location-create' %}" class="btn btn-success">➕ Ajouter un lieu</a>
+
+<ul>
+    {% for location in locations %}
+        <li>
+            <a href="{% url 'catalogue:location-show' location.slug %}">
+                {{ location.designation }} – {{ location.locality }}
+            </a>
+        </li>
+    {% empty %}
+        <li>Aucun lieu enregistré.</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'home' %}" class="btn btn-secondary">🏠 Retour à l'accueil</a>
+{% endblock %}

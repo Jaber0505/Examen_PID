@@ -1,0 +1,67 @@
+[
+  {
+    "model": "catalogue.artisttype",
+    "pk": 1,
+    "fields": {
+      "artist": [
+        "Danielle",
+        "Camus"
+      ],
+      "type": [
+        "Chanteur"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttype",
+    "pk": 2,
+    "fields": {
+      "artist": [
+        "Franck",
+        "Hernandez"
+      ],
+      "type": [
+        "Comédien"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttype",
+    "pk": 3,
+    "fields": {
+      "artist": [
+        "Françoise",
+        "Klein"
+      ],
+      "type": [
+        "Danseur"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttype",
+    "pk": 4,
+    "fields": {
+      "artist": [
+        "Maryse",
+        "Denis"
+      ],
+      "type": [
+        "Musicien"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttype",
+    "pk": 5,
+    "fields": {
+      "artist": [
+        "Emmanuelle",
+        "Le Roux"
+      ],
+      "type": [
+        "Comédien"
+      ]
+    }
+  }
+]

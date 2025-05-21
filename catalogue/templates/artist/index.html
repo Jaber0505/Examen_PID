@@ -1,0 +1,29 @@
+<!-- catalogue/templates/artist/index.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+
+    <div class="form-actions">
+        <a href="{% url 'catalogue:artist-create' %}" class="btn btn-success">➕ Ajouter un artiste</a>
+
+    </div>
+    
+    <ul>
+        {% for artist in artists %}
+            <li>
+                <a href="{% url 'catalogue:artist-show' artist.id %}">
+                    {{ artist.first_name }} {{ artist.last_name }}
+                </a>
+            </li>
+        {% empty %}
+            <li>Aucun artiste pour l’instant.</li>
+        {% endfor %}
+    </ul>
+
+    <div class="form-actions">
+        <a href="{% url 'home' %}" class="btn btn-secondary">🏠 Retour à l'accueil</a>
+    </div>
+{% endblock %}

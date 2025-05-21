@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<p>⚠️ Êtes-vous sûr de vouloir supprimer votre avis noté <strong>{{ review.rating }}/5</strong> ?</p>
+<p><em>"{{ review.comment }}"</em></p>
+
+<form method="post" class="form-actions">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">🗑 Supprimer</button>
+    <a href="{% url 'catalogue:show-show' review.show.slug %}" class="btn btn-secondary">❌ Annuler</a>
+</form>
+{% endblock %}

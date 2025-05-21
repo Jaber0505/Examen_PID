@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Mon site{% endblock %}</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'catalogue/css/style.css' %}">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <h1 class="site-title">
+                    <a href="{% url 'home' %}">
+                        <img src="{% static 'catalogue/images/logo.png' %}" alt="Logo" class="logo">
+                        Portail - Or Cinema
+                    </a>
+                </h1>
+
+                <div class="auth-buttons">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'account:profile' %}"><span class="user-label">👤 {{ user.username }}</span></a> | 
+                        <a href="{% url 'account:logout' %}" class="btn btn-danger">Déconnexion</a>
+                    {% else %}
+                        <a href="{% url 'account:login' %}" class="btn btn-primary">Connexion</a>
+                        <a href="{% url 'account:register' %}" class="btn btn-success">Inscription</a>
+                    {% endif %}
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul class="nav">
+                <li>
+                    <a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}">Accueil</a>
+                </li>
+                <li>
+                    <a href="{% url 'catalogue:artist-index' %}" class="{% if '/artist/' in request.path %}active{% endif %}">Artistes</a>
+                </li>
+                <li>
+                    <a href="{% url 'catalogue:show-index' %}" class="{% if '/show/' in request.path %}active{% endif %}">Films</a>
+                </li>
+                {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'catalogue:representation-index' %}" class="{% if '/representation/' in request.path %}active{% endif %}">Representation</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'catalogue:reservation-index' %}" class="{% if '/reservation/' in request.path %}active{% endif %}">Mes réservations</a>
+                    </li>
+                {% endif %}
+                {% if user.is_authenticated and user.is_admin %}
+                    <li>
+                        <a href="{% url 'account:dashboard' %}" class="{% if '/dashboard/' in request.path %}active{% endif %}">Dashboard</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+        <div class="container">
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% block content %}{% endblock %}
+        </div>
+
+        <footer>
+            <hr>
+            <p>© 2025 - Projet Django</p>
+        </footer>
+    </body>
+</html>

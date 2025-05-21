@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    <!-- Affichage du tarif (non modifiable) -->
+    <div class="mb-3">
+        <label class="form-label">Tarif</label>
+        {{ form.display_price }}
+    </div>
+
+    <!-- Champ pour la quantité -->
+    <div class="mb-3">
+        {{ form.quantity.label_tag }}
+        {{ form.quantity }}
+        {% if form.quantity.errors %}
+            <div class="text-danger">{{ form.quantity.errors }}</div>
+        {% endif %}
+    </div>
+
+    <!-- Champ caché pour le price.id -->
+    {{ form.price }}
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-success">💾 Valider</button>
+        <a href="{% url 'catalogue:representation-show' representation.id %}" class="btn btn-danger">❌ Annuler</a>
+    </div>
+</form>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<a href="{% url 'catalogue:show-create' %}" class="btn btn-success">➕ Ajouter un spectacle</a>
+
+<ul>
+    {% for show in shows %}
+        <li>
+            <a href="{% url 'catalogue:show-show' show.slug %}">
+                {{ show.title }}
+            </a>
+        </li>
+    {% empty %}
+        <li>Aucun spectacle enregistré.</li>
+    {% endfor %}
+</ul>
+
+<div class="form-actions">
+    <a href="{% url 'home' %}" class="btn btn-secondary">🏠 Retour à l'accueil</a>
+</div>
+{% endblock %}

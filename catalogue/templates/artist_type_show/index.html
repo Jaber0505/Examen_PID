@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<div class="form-actions">
+    <a href="{% url 'catalogue:artist-type-show-create' %}" class="btn btn-success">➕ Ajouter une participation</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Artiste</th>
+            <th>Type</th>
+            <th>Spectacle</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for link in links %}
+        <tr>
+            <td>{{ link.artist_type.artist }}</td>
+            <td>{{ link.artist_type.type }}</td>
+            <td>{{ link.show.title }}</td>
+            <td>
+                <a href="{% url 'catalogue:artist-type-show-edit' link.id %}" class="btn btn-sm btn-primary">✏️ Modifier</a>
+                <a href="{% url 'catalogue:artist-type-show-delete' link.id %}" class="btn btn-sm btn-danger">🗑 Supprimer</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

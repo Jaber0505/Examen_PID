@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+{% if reservations %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Spectacle</th>
+            <th>Date</th>
+            <th>Statut</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for reservation in reservations %}
+        <tr>
+            <td>{{ reservation.representation.show.title }}</td>
+            <td>{{ reservation.representation.schedule|date:"d/m/Y H:i" }}</td>
+            <td>{{ reservation.get_status_display }}</td>
+            <td>
+                <a href="{% url 'catalogue:reservation-show' reservation.id %}" class="btn btn-secondary btn-sm">👁 Voir</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>Aucune réservation enregistrée.</p>
+{% endif %}
+{% endblock %}

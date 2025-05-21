@@ -1,0 +1,72 @@
+[
+  {
+    "model": "catalogue.type",
+    "pk": 1,
+    "fields": {
+      "name": "Comédien"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 2,
+    "fields": {
+      "name": "Danseur"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 3,
+    "fields": {
+      "name": "Musicien"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 4,
+    "fields": {
+      "name": "Chanteur"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 5,
+    "fields": {
+      "name": "Magicien"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 6,
+    "fields": {
+      "name": "Humoriste"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 7,
+    "fields": {
+      "name": "Acrobate"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 8,
+    "fields": {
+      "name": "Improvisateur"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 9,
+    "fields": {
+      "name": "Mime"
+    }
+  },
+  {
+    "model": "catalogue.type",
+    "pk": 10,
+    "fields": {
+      "name": "Conteuse"
+    }
+  }
+]

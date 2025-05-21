@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<p>⚠️ Confirmez la suppression de cette réservation :</p>
+
+<ul>
+    <li><strong>Spectacle :</strong> {{ item.representation.show.title }}</li>
+    <li><strong>Date :</strong> {{ item.representation.schedule|date:"d/m/Y H:i" }}</li>
+    <li><strong>Tarif :</strong> {{ item.price.type }} ({{ item.quantity }} places)</li>
+</ul>
+
+<form method="post" class="form-actions">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">🗑 Supprimer</button>
+    <a href="{% url 'catalogue:representation_reservation-show' item.id %}" class="btn btn-secondary">❌ Annuler</a>
+</form>
+{% endblock %}

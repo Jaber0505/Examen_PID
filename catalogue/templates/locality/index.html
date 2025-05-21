@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<a href="{% url 'catalogue:locality-create' %}" class="btn btn-success">➕ Ajouter une localité</a>
+
+<ul>
+    {% for locality in localities %}
+        <li>
+            <a href="{% url 'catalogue:locality-show' locality.id %}">
+                {{ locality }}
+            </a>
+        </li>
+    {% empty %}
+        <li>Aucune localité enregistrée.</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'home' %}" class="btn btn-secondary">🏠 Retour à l'accueil</a>
+{% endblock %}

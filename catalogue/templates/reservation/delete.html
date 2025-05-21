@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<p>⚠️ Êtes-vous sûr de vouloir supprimer votre réservation pour :</p>
+
+<ul>
+    <li><strong>Spectacle :</strong> {{ representation.show.title }}</li>
+    <li><strong>Date :</strong> {{ representation.schedule|date:"d/m/Y H:i" }}</li>
+    <li><strong>Lieu :</strong> {{ representation.location.designation }}</li>
+</ul>
+
+<form method="post" class="form-actions">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">🗑 Supprimer</button>
+    <a href="{% url 'catalogue:reservation-show' reservation.id %}" class="btn btn-secondary">❌ Annuler</a>
+</form>
+{% endblock %}
