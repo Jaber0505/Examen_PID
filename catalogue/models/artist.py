@@ -7,6 +7,13 @@ class ArtistManager(models.Manager):
 class Artist(models.Model):
     first_name = models.CharField("Prénom", max_length=60)
     last_name = models.CharField("Nom", max_length=60)
+    
+    troupe = models.ForeignKey(
+        "catalogue.Troupe",
+        on_delete=models.PROTECT,
+        related_name="artists",
+        verbose_name="Troupe"
+    )
 
     objects = ArtistManager()
 

@@ -5,6 +5,7 @@ $fixtures = @(
     "RoleUserFixtures.json"
     "TypeFixtures.json",
     "LocalityFixtures.json",
+    "TroupeFixtures.json"
     "ArtistFixtures.json",
     "LocationFixtures.json",
     "PriceFixtures.json",

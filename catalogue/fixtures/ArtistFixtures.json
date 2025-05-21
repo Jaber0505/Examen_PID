@@ -4,7 +4,8 @@
     "pk": 1,
     "fields": {
       "first_name": "Danielle",
-      "last_name": "Camus"
+      "last_name": "Camus",
+      "troupe": 1
     }
   },
   {
@@ -12,7 +13,8 @@
     "pk": 2,
     "fields": {
       "first_name": "Franck",
-      "last_name": "Hernandez"
+      "last_name": "Hernandez",
+      "troupe": 1
     }
   },
   {
@@ -20,7 +22,8 @@
     "pk": 3,
     "fields": {
       "first_name": "Françoise",
-      "last_name": "Klein"
+      "last_name": "Klein",
+      "troupe": 2
     }
   },
   {
@@ -28,7 +31,8 @@
     "pk": 4,
     "fields": {
       "first_name": "Maryse",
-      "last_name": "Denis"
+      "last_name": "Denis",
+      "troupe": 2
     }
   },
   {
@@ -36,7 +40,8 @@
     "pk": 5,
     "fields": {
       "first_name": "Emmanuelle",
-      "last_name": "Le Roux"
+      "last_name": "Le Roux",
+      "troupe": 3
     }
   },
   {
@@ -44,7 +49,8 @@
     "pk": 6,
     "fields": {
       "first_name": "Sylvie",
-      "last_name": "Gimenez"
+      "last_name": "Gimenez",
+      "troupe": 3
     }
   },
   {
@@ -52,7 +58,8 @@
     "pk": 7,
     "fields": {
       "first_name": "Lucas",
-      "last_name": "Marion"
+      "last_name": "Marion",
+      "troupe": 4
     }
   },
   {
@@ -60,7 +67,8 @@
     "pk": 8,
     "fields": {
       "first_name": "Emmanuelle",
-      "last_name": "Coste"
+      "last_name": "Coste",
+      "troupe": 4
     }
   },
   {
@@ -68,7 +76,8 @@
     "pk": 9,
     "fields": {
       "first_name": "Sébastien",
-      "last_name": "Hebert"
+      "last_name": "Hebert",
+      "troupe": 5
     }
   },
   {
@@ -76,7 +85,8 @@
     "pk": 10,
     "fields": {
       "first_name": "Éric",
-      "last_name": "Godard"
+      "last_name": "Godard",
+      "troupe": 5
     }
   }
 ]

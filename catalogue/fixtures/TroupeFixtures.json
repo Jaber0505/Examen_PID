@@ -1,0 +1,42 @@
+[
+  {
+    "model": "catalogue.troupe",
+    "pk": 1,
+    "fields": {
+      "name": "Les Comédiens du Soleil",
+      "logo_url": "https://example.com/logos/comedien_soleil.png"
+    }
+  },
+  {
+    "model": "catalogue.troupe",
+    "pk": 2,
+    "fields": {
+      "name": "Théâtre de la Lune",
+      "logo_url": "https://example.com/logos/theatre_lune.png"
+    }
+  },
+  {
+    "model": "catalogue.troupe",
+    "pk": 3,
+    "fields": {
+      "name": "La Troupe du Vent",
+      "logo_url": "https://example.com/logos/troupe_vent.png"
+    }
+  },
+  {
+    "model": "catalogue.troupe",
+    "pk": 4,
+    "fields": {
+      "name": "Les Artistes du Ruisseau",
+      "logo_url": "https://example.com/logos/artistes_ruisseau.png"
+    }
+  },
+  {
+    "model": "catalogue.troupe",
+    "pk": 5,
+    "fields": {
+      "name": "La Compagnie du Miroir",
+      "logo_url": "https://example.com/logos/compagnie_miroir.png"
+    }
+  }
+]
