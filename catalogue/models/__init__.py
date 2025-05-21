@@ -10,3 +10,4 @@ from .representation import Representation
 from .review import Review
 from .reservation import Reservation
 from .representation_reservation import RepresentationReservation
+from .troupes import Troupe
