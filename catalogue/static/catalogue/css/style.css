@@ -399,3 +399,14 @@ select:focus {
     font-style: italic;
     color: #777;
 }
+
+
+/* ======================
+    LOGO
+======================== */
+
+.logo-troupe {
+    width: 50px;
+    height: auto;
+    border-radius: 4px; /* optionnel, coins arrondis */
+}

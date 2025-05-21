@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Les Comédiens du Soleil",
-      "logo_url": "https://example.com/logos/comedien_soleil.png"
+      "logo_url": "https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-belge_53876-27112.jpg?semt=ais_hybrid&w=740"
     }
   },
   {
@@ -12,7 +12,7 @@
     "pk": 2,
     "fields": {
       "name": "Théâtre de la Lune",
-      "logo_url": "https://example.com/logos/theatre_lune.png"
+      "logo_url": "https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-france_53876-27099.jpg?semt=ais_hybrid&w=740"
     }
   },
   {
@@ -20,7 +20,7 @@
     "pk": 3,
     "fields": {
       "name": "La Troupe du Vent",
-      "logo_url": "https://example.com/logos/troupe_vent.png"
+      "logo_url": "https://logodownload.org/wp-content/uploads/2023/07/bandeira-paises-baixos-netherlands-flag-3.png"
     }
   },
   {
@@ -28,7 +28,7 @@
     "pk": 4,
     "fields": {
       "name": "Les Artistes du Ruisseau",
-      "logo_url": "https://example.com/logos/artistes_ruisseau.png"
+      "logo_url": "https://img.freepik.com/vecteurs-libre/illustration-du-drapeau-allemand_53876-27101.jpg?semt=ais_hybrid&w=740"
     }
   },
   {
@@ -36,7 +36,7 @@
     "pk": 5,
     "fields": {
       "name": "La Compagnie du Miroir",
-      "logo_url": "https://example.com/logos/compagnie_miroir.png"
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Flag_of_Luxembourg.svg/langfr-250px-Flag_of_Luxembourg.svg.png"
     }
   }
 ]

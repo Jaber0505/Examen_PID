@@ -11,6 +11,17 @@
 
     <p><strong>Prénom :</strong> {{ artist.first_name }}</p>
     <p><strong>Nom :</strong> {{ artist.last_name }}</p>
+    <p><strong>Troupe :</strong></p>
+    {% if artist.troupe %}
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span>{{ artist.troupe.name }}</span>
+            <img src="{{ artist.troupe.logo_url }}" alt="Logo {{ artist.troupe.name }}" width="50" style="height: auto;">
+        </div>
+    {% else %}
+        <p>Non affilié</p>
+    {% endif %}
+
+
 
     <hr>
 

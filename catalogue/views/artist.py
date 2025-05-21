@@ -12,7 +12,7 @@ def index(request):
     })
 
 def show(request, artist_id):
-    artist = get_object_or_404(Artist, pk=artist_id)
+    artist = get_object_or_404(Artist.objects.select_related('troupe'), pk=artist_id)
     types = artist.artiste_type.select_related("type")
 
     participations = ArtistTypeShow.objects.filter(artist_type__artist=artist).select_related(

@@ -11,9 +11,16 @@ class Artist(models.Model):
     troupe = models.ForeignKey(
         "catalogue.Troupe",
         on_delete=models.PROTECT,
-        related_name="artists",
+        related_name='artists',
+        null=True,
+        blank=True,
         verbose_name="Troupe"
     )
+    
+    def troupe_name(self):
+        if self.troupe:
+            return self.troupe.name
+        return "Non affilié"
 
     objects = ArtistManager()
 
