@@ -1,0 +1,102 @@
+[
+  {
+    "model": "catalogue.price",
+    "pk": 1,
+    "fields": {
+      "type": "Enfant",
+      "price": "33.36",
+      "start_date": "2025-05-03",
+      "end_date": "2025-12-09"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 2,
+    "fields": {
+      "type": "Étudiant",
+      "price": "43.03",
+      "start_date": "2024-11-09",
+      "end_date": "2026-03-07"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 3,
+    "fields": {
+      "type": "Adulte",
+      "price": "15.94",
+      "start_date": "2025-02-04",
+      "end_date": "2025-08-05"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 4,
+    "fields": {
+      "type": "Senior",
+      "price": "37.92",
+      "start_date": "2024-07-03",
+      "end_date": "2025-11-28"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 5,
+    "fields": {
+      "type": "VIP",
+      "price": "10.27",
+      "start_date": "2024-10-19",
+      "end_date": "2025-08-26"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 6,
+    "fields": {
+      "type": "Promo",
+      "price": "14.92",
+      "start_date": "2024-08-06",
+      "end_date": "2026-01-22"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 7,
+    "fields": {
+      "type": "Invité",
+      "price": "40.76",
+      "start_date": "2024-06-03",
+      "end_date": "2026-03-24"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 8,
+    "fields": {
+      "type": "Standard",
+      "price": "19.96",
+      "start_date": "2024-08-09",
+      "end_date": "2026-01-16"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 9,
+    "fields": {
+      "type": "Réduit",
+      "price": "41.72",
+      "start_date": "2024-07-13",
+      "end_date": "2025-06-28"
+    }
+  },
+  {
+    "model": "catalogue.price",
+    "pk": 10,
+    "fields": {
+      "type": "Plein tarif",
+      "price": "9.53",
+      "start_date": "2024-08-02",
+      "end_date": "2025-11-13"
+    }
+  }
+]

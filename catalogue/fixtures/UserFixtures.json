@@ -1,0 +1,172 @@
+[
+  {
+    "model": "account.customuser",
+    "pk": 1,
+    "fields": {
+      "username": "jab",
+      "email": "alain22@bouygtel.fr",
+      "first_name": "Jaber",
+      "last_name": "Marques",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-02-14T20:31:34",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 2,
+    "fields": {
+      "username": "zak",
+      "email": "renee90@dupuy.com",
+      "first_name": "Zakaria",
+      "last_name": "Charpentier",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2023-01-26T07:08:51",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 3,
+    "fields": {
+      "username": "souf",
+      "email": "theodorenoel@tiscali.fr",
+      "first_name": "Soufiane",
+      "last_name": "Dupuis",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2020-05-29T22:15:18",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 4,
+    "fields": {
+      "username": "you",
+      "email": "dorotheechauveau@hotmail.fr",
+      "first_name": "Youssef",
+      "last_name": "Antoine",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2022-10-17T16:16:47",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 5,
+    "fields": {
+      "username": "red",
+      "email": "gnicolas@tiscali.fr",
+      "first_name": "Redwane",
+      "last_name": "Marques",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2022-12-03T16:31:13",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 6,
+    "fields": {
+      "username": "bra",
+      "email": "sferreira@launay.com",
+      "first_name": "Brahim",
+      "last_name": "Daniel",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2021-04-28T15:09:22",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 7,
+    "fields": {
+      "username": "mero",
+      "email": "friou@clement.net",
+      "first_name": "Marwane",
+      "last_name": "Collin",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2020-01-25T09:24:49",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 8,
+    "fields": {
+      "username": "oth",
+      "email": "hberthelot@pons.fr",
+      "first_name": "Othman",
+      "last_name": "Mary",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2021-11-05T23:35:54",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 9,
+    "fields": {
+      "username": "abd",
+      "email": "tessiermatthieu@bouygtel.fr",
+      "first_name": "Abdelah",
+      "last_name": "Diallo",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2021-06-01T13:11:16",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  },
+  {
+    "model": "account.customuser",
+    "pk": 10,
+    "fields": {
+      "username": "jal",
+      "email": "agathenoel@hotmail.fr",
+      "first_name": "Jalal",
+      "last_name": "Boutin",
+      "password": "pbkdf2_sha256$260000$saltsalt$5pP9/NbZPHhIcJrLgi3J5XvuHf9/xL1NLbA5Zh2Sx9s=",
+      "is_staff": false,
+      "is_active": true,
+      "is_superuser": false,
+      "date_joined": "2020-03-26T19:25:05",
+      "last_login": null
+    },
+    "_comment": "Mot de passe en clair : Password123!"
+  }
+]

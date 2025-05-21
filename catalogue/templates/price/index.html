@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<a href="{% url 'catalogue:price-create' %}" class="btn btn-success">➕ Ajouter un tarif</a>
+
+<ul>
+    {% for price in prices %}
+        <li>
+            <a href="{% url 'catalogue:price-show' price.id %}">
+                {{ price.type }} – {{ price.price|floatformat:2 }} €
+            </a>
+        </li>
+    {% empty %}
+        <li>Aucun tarif enregistré.</li>
+    {% endfor %}
+</ul>
+
+<div class="form-actions">
+    <a href="{% url 'home' %}" class="btn btn-secondary">🏠 Retour à l'accueil</a>
+</div>
+{% endblock %}

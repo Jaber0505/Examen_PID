@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+
+    <p>⚠️ Supprimer la participation de <strong>{{ link.artist_type.artist }}</strong>
+    dans le rôle <strong>{{ link.artist_type.type }}</strong> pour le spectacle
+    <strong>{{ link.show.title }}</strong> ?</p>
+
+    <form method="post" class="form-actions">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">🗑 Supprimer</button>
+        <a href="{% url 'catalogue:artist-type-show-index' %}" class="btn btn-secondary">❌ Annuler</a>
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+        {% if form.instance.pk %}
+            <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
+        {% else %}
+            <button type="submit" class="btn btn-success">➕ Créer</button>
+        {% endif %}
+        <a href="{% url 'catalogue:type-index' %}" class="btn btn-danger">❌ Annuler</a>
+    </div>
+</form>
+{% endblock %}

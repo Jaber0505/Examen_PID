@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<!-- Actions admin -->
+<div class="form-actions">
+    <a href="{% url 'catalogue:representation-edit' representation.id %}" class="btn btn-primary">✏️ Modifier</a>
+    <a href="{% url 'catalogue:representation-delete' representation.id %}" class="btn btn-danger">🗑 Supprimer</a>
+</div>
+
+<hr>
+
+<!-- Infos générales -->
+<p><strong>Spectacle :</strong> {{ representation.show.title }}</p>
+<p><strong>Date :</strong> {{ representation.schedule|date:"d/m/Y H:i" }}</p>
+<p><strong>Lieu :</strong> {{ representation.location.designation }}</p>
+<p><strong>Capacité utilisée :</strong> {{ representation.capacity_used }} / 100</p>
+
+<!-- Statut -->
+<p><strong>Statut :</strong>
+    {% if representation.is_expired %}
+        <span class="text-danger">❌ Expiré</span>
+    {% elif representation.is_full %}
+        <span class="text-warning">🟡 Complet</span>
+    {% else %}
+        <span class="text-success">✅ Réservable</span>
+    {% endif %}
+</p>
+
+<hr>
+
+<!-- Réservation utilisateur -->
+{% if has_reservation %}
+    <p class="alert alert-success">✅ Vous avez réservé cette représentation.</p>
+{% else %}
+    {% if not representation.is_expired and not representation.is_full %}
+        <a href="{% url 'catalogue:representation_reservation-multi-create' representation.id %}" class="btn btn-success">
+            ➕ Réserver une ou plusieurs places
+        </a>
+    {% else %}
+        <p class="alert alert-warning">⚠️ Réservation impossible pour cette représentation.</p>
+    {% endif %}
+{% endif %}
+
+<hr>
+
+<a href="{% url 'catalogue:representation-index' %}" class="btn btn-secondary">🔙 Retour à la liste</a>
+{% endblock %}

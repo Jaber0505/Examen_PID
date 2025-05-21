@@ -1,0 +1,119 @@
+#########################################
+## Création d'un environnement virtuel ##
+#########################################
+python -m venv .venv
+
+####################################
+## Lancer l'environnement virtuel ##
+####################################
+.venv\Script\Activate.ps1       OR
+.venv\Scripts\activate          OR
+.venv\Scripts\activate.bat
+## Et pour desactiver le virtuel ecrire -> deactivate ##
+
+########################
+## Installer Postgrel ##
+########################
+pip install django psycopg2-binary
+
+## Et dans settings du projet mettre le bon ENGINE ##
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'reservations',
+        'USER': 'postgres',
+        'PASSWORD': 'admin123',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+###########################################
+## Ouvrir le terminale Postgrel VIA BASH ##
+###########################################
+psql -U postgres
+
+############################################################
+## Crée une nouvelle base de donnée VIA TERMINAL POSTEGRE ##
+############################################################
+CREATE DATABASE reservation;
+CREATE USER postgres WITH PASSWORD 'admin123';
+GRANT ALL PRIVILEGES ON DATABASE reservation TO postgres;
+\l        -- Liste les bases
+\du       -- Liste les utilisateurs
+\q        -- Quitter psql
+
+
+#######################
+## Crée un SuperUser ##
+#######################
+python manage.py createsuperuser
+
+###########################
+## Lancer les migrations ##
+###########################
+python manage.py makemigrations
+python manage.py migrate
+
+#########################
+## Lancer les fixtures ##
+#########################
+powershell -ExecutionPolicy Bypass -File .\catalogue\fixtures\load_fixtures.ps1
+
+######################################
+## Apres avoir crée requirement.txt ##
+######################################
+pip install -r requirements.txt
+
+##############################################
+## Lancer le serveur après avoir le VIRTUEL ##
+##############################################
+python manage.py runserver
+
+#########################################################
+## Supprimer toutes les données dans la base de donnée ##
+#########################################################
+python manage.py flush
+
+###########################################
+## Attribuer un role à un user via shell ##
+###########################################
+python manage.py shell
+
+from account.models import CustomUser, Role, RoleUser
+
+# Récupérer un utilisateur
+user = CustomUser.objects.get(username='ton_username')
+
+# Récupérer un rôle
+role = Role.objects.get(role='Admin')  # ou 'Organisateur', etc.
+
+# Créer la liaison utilisateur-rôle
+RoleUser.objects.create(user=user, role=role)
+
+# Ou avec ManyToMany (si tu utilises le champ roles)
+user.roles.add(role)
+user.save()
+
+####################################################
+## SUPPRIMER TOUTE LA BASE DE DONNE DANS POSTEGRE ##
+####################################################
+--> COMMANDE POSTGRE :
+----------------------
+
+DO $$ 
+DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN (
+        SELECT tablename
+        FROM pg_tables
+        WHERE schemaname = 'public'
+    ) LOOP
+        EXECUTE 'DROP TABLE IF EXISTS public.' || quote_ident(r.tablename) || ' CASCADE';
+    END LOOP;
+END $$;
+
+
+--> FAIRE ENSUITE MIGRATION + FIXTURES

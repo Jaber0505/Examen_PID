@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">
+            {% if form.instance.pk %}💾 Enregistrer{% else %}➕ Ajouter l’avis{% endif %}
+        </button>
+        <a href="{% url 'catalogue:show-show' show.slug %}" class="btn btn-danger">❌ Annuler</a>
+    </div>
+</form>
+{% endblock %}

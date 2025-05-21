@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<div class="form-actions">
+    <a href="{% url 'catalogue:artist-type-create' %}" class="btn btn-success">➕ Ajouter une association</a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Artiste</th>
+            <th>Type</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for at in artist_types %}
+        <tr>
+            <td>{{ at.artist }}</td>
+            <td>{{ at.type }}</td>
+            <td>
+                <a href="{% url 'catalogue:artist-type-edit' at.id %}" class="btn btn-sm btn-primary">✏️ Modifier</a>
+                <a href="{% url 'catalogue:artist-type-delete' at.id %}" class="btn btn-sm btn-danger">🗑 Supprimer</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

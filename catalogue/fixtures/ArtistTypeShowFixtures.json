@@ -1,0 +1,72 @@
+[
+  {
+    "model": "catalogue.artisttypeshow",
+    "pk": 1,
+    "fields": {
+      "artist_type": [
+        "Danielle",
+        "Camus",
+        "Chanteur"
+      ],
+      "show": [
+        "le-confort-datteindre-vos-buts-a-letat-pur"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttypeshow",
+    "pk": 2,
+    "fields": {
+      "artist_type": [
+        "Franck",
+        "Hernandez",
+        "Comédien"
+      ],
+      "show": [
+        "lart-datteindre-vos-buts-a-la-pointe"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttypeshow",
+    "pk": 3,
+    "fields": {
+      "artist_type": [
+        "Françoise",
+        "Klein",
+        "Danseur"
+      ],
+      "show": [
+        "la-liberte-de-louer-plus-rapidement"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttypeshow",
+    "pk": 4,
+    "fields": {
+      "artist_type": [
+        "Maryse",
+        "Denis",
+        "Musicien"
+      ],
+      "show": [
+        "le-droit-datteindre-vos-buts-a-letat-pur"
+      ]
+    }
+  },
+  {
+    "model": "catalogue.artisttypeshow",
+    "pk": 5,
+    "fields": {
+      "artist_type": [
+        "Emmanuelle",
+        "Le Roux",
+        "Comédien"
+      ],
+      "show": [
+        "la-possibilite-de-louer-plus-facilement"
+      ]
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Représentations disponibles{% endblock %}
+
+{% block content %}
+<h2>🎭 Représentations</h2>
+
+<div class="form-actions">
+    <a href="{% url 'catalogue:representation-create' %}" class="btn btn-success">
+        ➕ Ajouter une représentation
+    </a>
+</div>
+
+{% if representations %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Spectacle</th>
+            <th>Date</th>
+            <th>Lieu</th>
+            <th>Statut</th>
+            <th style="text-align: center;">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for r in representations %}
+        <tr>
+            <td>{{ r.show.title }}</td>
+            <td>{{ r.schedule|date:"d/m/Y H:i" }}</td>
+            <td>{{ r.location.designation }}</td>
+            <td>
+                {% if r.is_expired %}
+                    <span class="text-danger">❌ Expiré</span>
+                {% elif r.is_full %}
+                    <span class="text-warning">🟡 Complet</span>
+                {% else %}
+                    <span class="text-success">✅ Réservable</span>
+                {% endif %}
+            </td>
+            <td style="text-align: center;">
+                <a href="{% url 'catalogue:representation-show' r.id %}" class="btn btn-secondary btn-sm">
+                    👁 Voir
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+    <p>Aucune représentation n'est disponible pour le moment.</p>
+{% endif %}
+{% endblock %}

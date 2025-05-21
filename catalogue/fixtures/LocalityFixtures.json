@@ -1,0 +1,82 @@
+[
+  {
+    "model": "catalogue.locality",
+    "pk": 1,
+    "fields": {
+      "postal_code": "1000",
+      "locality": "Prévost-sur-Mer"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 2,
+    "fields": {
+      "postal_code": "1001",
+      "locality": "Gonzalez"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 3,
+    "fields": {
+      "postal_code": "1002",
+      "locality": "Lemoine"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 4,
+    "fields": {
+      "postal_code": "1003",
+      "locality": "Sainte Christelle"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 5,
+    "fields": {
+      "postal_code": "1004",
+      "locality": "Saint Margaret-les-Bains"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 6,
+    "fields": {
+      "postal_code": "1005",
+      "locality": "Morel"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 7,
+    "fields": {
+      "postal_code": "1006",
+      "locality": "Sainte Virginie-la-Forêt"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 8,
+    "fields": {
+      "postal_code": "1007",
+      "locality": "Huet-sur-Mer"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 9,
+    "fields": {
+      "postal_code": "1008",
+      "locality": "Humbert-sur-Delorme"
+    }
+  },
+  {
+    "model": "catalogue.locality",
+    "pk": 10,
+    "fields": {
+      "postal_code": "1009",
+      "locality": "Lebreton"
+    }
+  }
+]

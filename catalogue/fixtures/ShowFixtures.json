@@ -1,0 +1,142 @@
+[
+  {
+    "model": "catalogue.show",
+    "pk": 1,
+    "fields": {
+      "slug": "le-confort-datteindre-vos-buts-a-letat-pur",
+      "title": "Le confort d'atteindre vos buts à l'état pur",
+      "description": "Lendemain terre entourer leur plaisir cour. Tout accuser près quinze énorme maison.",
+      "poster_url": "https://www.animalis.com/conseils/app/uploads/2023/05/banniere-chaton.jpg",
+      "duration": 90,
+      "created_in": 2021,
+      "location": ["michel-sa", "https://michel-sa.com"],
+      "bookable": true
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 2,
+    "fields": {
+      "slug": "lart-datteindre-vos-buts-a-la-pointe",
+      "title": "L'art d'atteindre vos buts à la pointe",
+      "description": "Mouvement poésie révolution. Offrir déjà soin ah sous quatre.",
+      "poster_url": "https://cdn-s-www.ledauphine.com/images/BF80371B-9B03-4E16-8064-3B89B0E7F346/FB1200/photo-1720015999.jpg",
+      "duration": 100,
+      "created_in": 2022,
+      "location": ["ferreira", "https://ferreira.be"],
+      "bookable": true
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 3,
+    "fields": {
+      "slug": "la-liberte-de-louer-plus-rapidement",
+      "title": "La liberté de louer plus rapidement",
+      "description": "Corps répéter remplir ça attaquer précis. Exemple part vague devant aller.",
+      "poster_url": "https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/6/a/3/6a39fb406e_50165706_fraise-fruit-red150770-adobe-stock.jpg",
+      "duration": 80,
+      "created_in": 2020,
+      "location": ["lacroix", "https://lacroix.be"],
+      "bookable": true
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 4,
+    "fields": {
+      "slug": "le-droit-datteindre-vos-buts-a-letat-pur",
+      "title": "Le droit d'atteindre vos buts à l'état pur",
+      "description": "Avec auteur expérience amener étouffer.",
+      "poster_url": "https://static.wikia.nocookie.net/pacman/images/2/24/Pac-Man-0.png/revision/latest/scale-to-width-down/1200?cb=20190526005949",
+      "duration": 95,
+      "created_in": 2023,
+      "location": ["legendre", "https://legendre.org"],
+      "bookable": false
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 5,
+    "fields": {
+      "slug": "la-possibilite-de-louer-plus-facilement",
+      "title": "La possibilité de louer plus facilement",
+      "description": "Bonheur naturel chute. Fauteuil phrase simplement objet fond.",
+      "poster_url": "https://img.freepik.com/vecteurs-libre/adorable-licorne-rose-etoiles_1308-146486.jpg?semt=ais_hybrid&w=740",
+      "duration": 85,
+      "created_in": 2021,
+      "location": ["nguyen", "https://nguyen.be"],
+      "bookable": true
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 6,
+    "fields": {
+      "slug": "le-droit-davancer-naturellement",
+      "title": "Le droit d'avancer naturellement",
+      "description": "Élever oiseau gouvernement ramasser besoin lettre veiller mêler.",
+      "poster_url": "https://www.piscines-ibiza.com/content/uploads/2024/07/piscine-naturelle.jpg",
+      "duration": 100,
+      "created_in": 2022,
+      "location": ["bourgeois", "https://bourgeois.net"],
+      "bookable": false
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 7,
+    "fields": {
+      "slug": "le-confort-davancer-autrement",
+      "title": "Le confort d'avancer autrement",
+      "description": "Français rencontrer réserver éclat faute. Jambe énorme pensée atteindre.",
+      "poster_url": "https://www.allibert-trekking.com/uploads/media/images/thumbnails/AMin3_2974-mont-fuji-et-lac-yamanaka_2.png?v5",
+      "duration": 110,
+      "created_in": 2023,
+      "location": ["renard-le-goff-sas", "https://renard-legoff.be"],
+      "bookable": true
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 8,
+    "fields": {
+      "slug": "lavantage-de-rouler-en-toute-tranquilite",
+      "title": "L'avantage de rouler en toute tranquilité",
+      "description": "Changer mot continuer habitant. Protéger retenir haut courir presser.",
+      "poster_url": "https://static.vecteezy.com/ti/vecteur-libre/t2/8386689-dessin-anime-bebe-poussin-assis-sur-l-herbe-vectoriel.jpg",
+      "duration": 75,
+      "created_in": 2020,
+      "location": ["colas", "https://colas.com"],
+      "bookable": true
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 9,
+    "fields": {
+      "slug": "lavantage-de-concretiser-vos-projets-naturellement",
+      "title": "L'avantage de concrétiser vos projets naturellement",
+      "description": "Poids vide forêt toi ignorer établir.",
+      "poster_url": "https://images.immediate.co.uk/production/volatile/sites/57/2025/03/shutterstock2594559269-9c9c693.jpg",
+      "duration": 105,
+      "created_in": 2021,
+      "location": ["guilbert-blot-sa", "https://guilbert-blot.be"],
+      "bookable": false
+    }
+  },
+  {
+    "model": "catalogue.show",
+    "pk": 10,
+    "fields": {
+      "slug": "le-droit-de-concretiser-vos-projets-naturellement",
+      "title": "Le droit de concrétiser vos projets naturellement",
+      "description": "Avouer blond réfléchir garde. Désormais dangereux seigneur doute.",
+      "poster_url": "https://media.istockphoto.com/id/1195743934/fr/vectoriel/conception-mignonne-de-vecteur-de-caract%C3%A8re-de-panda.jpg?s=612x612&w=0&k=20&c=MvvnZHIgp20M6vOJ7-eimxWi5p_3Vic9tnZVdoHChtM=",
+      "duration": 120,
+      "created_in": 2023,
+      "location": ["dufour", "https://dufour.be"],
+      "bookable": true
+    }
+  }
+]

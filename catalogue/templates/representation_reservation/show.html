@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+
+<p><strong>Spectacle :</strong> {{ item.representation.show.title }}</p>
+<p><strong>Date :</strong> {{ item.representation.schedule|date:"d/m/Y H:i" }}</p>
+<p><strong>Lieu :</strong> {{ item.representation.location.designation }}</p>
+<p><strong>Tarif :</strong> {{ item.price.type }} — {{ item.price.price }} €</p>
+<p><strong>Quantité :</strong> {{ item.quantity }}</p>
+
+<div class="form-actions">
+    <a href="{% url 'catalogue:representation_reservation-edit' item.id %}" class="btn btn-primary">✏️ Modifier</a>
+    <a href="{% url 'catalogue:representation_reservation-delete' item.id %}" class="btn btn-danger">🗑 Supprimer</a>
+    <a href="{% url 'catalogue:representation-show' item.representation.id %}" class="btn btn-secondary">🔙 Retour à la représentation</a>
+</div>
+{% endblock %}

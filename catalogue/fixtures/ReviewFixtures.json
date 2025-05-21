@@ -1,0 +1,62 @@
+[
+  {
+    "model": "catalogue.review",
+    "pk": 1,
+    "fields": {
+      "user": ["jab"],
+      "show": ["le-confort-datteindre-vos-buts-a-letat-pur"],
+      "rating": 2,
+      "comment": "Lui silence causer payer caractère quand exister."
+    }
+  },
+  {
+    "model": "catalogue.review",
+    "pk": 2,
+    "fields": {
+      "user": ["zak"],
+      "show": ["lart-datteindre-vos-buts-a-la-pointe"],
+      "rating": 1,
+      "comment": "Danser savoir dépasser lune plonger. Faux jeune naturellement chaleur affirmer. Environ neuf air certain forcer vif long."
+    }
+  },
+  {
+    "model": "catalogue.review",
+    "pk": 3,
+    "fields": {
+      "user": ["souf"],
+      "show": ["la-liberte-de-louer-plus-rapidement"],
+      "rating": 5,
+      "comment": "Réel renverser remercier monter. Demain cerveau déjà fin oh."
+    }
+  },
+  {
+    "model": "catalogue.review",
+    "pk": 4,
+    "fields": {
+      "user": ["you"],
+      "show": ["la-liberte-de-louer-plus-rapidement"],
+      "rating": 4,
+      "comment": "Leur terreur où aller nouveau jusque en valoir. Penser peu léger un jeune enfant sept."
+    }
+  },
+  {
+    "model": "catalogue.review",
+    "pk": 5,
+    "fields": {
+      "user": ["jab"],
+      "show": ["le-droit-datteindre-vos-buts-a-letat-pur"],
+      "rating": 3,
+      "comment": "J'ai adorer les chats quand ils volent !"
+    }
+  },
+  {
+    "model": "catalogue.review",
+    "pk": 6,
+    "fields": {
+      "user": ["red"],
+      "show": ["la-possibilite-de-louer-plus-facilement"],
+      "rating": 1,
+      "comment": "Occuper prendre sac reposer. Trésor crainte enfin quinze désirer social."
+    }
+  }
+]

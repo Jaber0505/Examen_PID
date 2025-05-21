@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">{{ title }}</h1>
+
+<form method="post" class="form-container">
+    {% csrf_token %}
+    <div class="user-info mb-3">
+        <strong>Utilisateur :</strong> {{ user_to_edit.username }}
+    </div>
+
+    <fieldset class="roles-fieldset mb-4 p-3 border rounded">
+        <legend class="fw-semibold mb-3">Rôles</legend>
+        <div class="roles-list d-flex flex-wrap gap-3">
+            {% for role in roles %}
+                <label class="role-checkbox d-flex align-items-center gap-2">
+                    <input type="checkbox" name="roles" value="{{ role.role }}" 
+                        {% if role in user_to_edit.roles.all %}checked{% endif %} 
+                        class="form-check-input" />
+                    <span>{{ role.role }}</span>
+                </label>
+            {% endfor %}
+        </div>
+    </fieldset>
+
+    <div class="form-actions d-flex gap-3">
+        <button type="submit" class="btn btn-primary px-4 py-2">
+            💾 Enregistrer
+        </button>
+        <a href="{% url 'account:dashboard-roles' %}" class="btn btn-secondary px-4 py-2">
+            ❌ Annuler
+        </a>
+    </div>
+</form>
+
+<style>
+.form-container {
+    max-width: 500px;
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+}
+
+.roles-fieldset {
+    background: #f9f9f9;
+}
+
+.role-checkbox {
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-actions {
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+</style>
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h2>Bienvenue sur le site des artistes</h2>
+    <p>Consultez la <a href="{% url 'catalogue:artist-index' %}">liste des artistes</a>.</p>
+{% endblock %}

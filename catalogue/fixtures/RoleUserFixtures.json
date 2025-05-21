@@ -1,0 +1,23 @@
+[
+  {
+    "model": "account.roleuser",
+    "fields": {
+      "user": ["jab"],
+      "role": ["Admin"]
+    }
+  },
+  {
+    "model": "account.roleuser",
+    "fields": {
+      "user": ["zak"],
+      "role": ["Organisateur"]
+    }
+  },
+  {
+    "model": "account.roleuser",
+    "fields": {
+      "user": ["souf"],
+      "role": ["Utilisateur"]
+    }
+  }
+]

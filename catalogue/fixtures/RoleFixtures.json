@@ -1,0 +1,20 @@
+[
+  {
+    "model": "account.role",
+    "fields": {
+      "role": "Admin"
+    }
+  },
+  {
+    "model": "account.role",
+    "fields": {
+      "role": "Organisateur"
+    }
+  },
+  {
+    "model": "account.role",
+    "fields": {
+      "role": "Utilisateur"
+    }
+  }
+]
