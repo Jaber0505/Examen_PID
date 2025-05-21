@@ -1,4 +1,4 @@
-from .artist_form import ArtistForm, ArtistFormNoTroupe
+from .artist_form import ArtistForm, ArtistTroupeForm
 from .artist_type_form import ArtistTypeForm
 from .artist_type_show_form import ArtistTypeShowForm
 from .type_form import TypeForm
