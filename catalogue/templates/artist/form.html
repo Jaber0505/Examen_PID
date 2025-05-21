@@ -3,20 +3,13 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-<h2>{{ title }}</h2>
+    <h2>{{ title }}</h2>
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
 
-    <div class="form-actions">
-        {% if form.instance.pk %}
-            <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
-            <a href="{% url 'catalogue:artist-show' form.instance.id %}" class="btn btn-danger">❌ Annuler</a>
-        {% else %}
-            <button type="submit" class="btn btn-success">➕ Créer</button>
-            <a href="{% url 'catalogue:artist-index' %}" class="btn btn-danger">❌ Annuler</a>
-        {% endif %}
-    </div>
-</form>
+        <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
+        <a href="{% url 'catalogue:artist-index' %}" class="btn btn-danger">❌ Annuler</a>
+    </form>
 {% endblock %}

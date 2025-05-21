@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
-from catalogue.models import Artist, Type, ArtistType, ArtistTypeShow
+from catalogue.models import Artist, ArtistTypeShow
 from catalogue.forms import ArtistForm
 
 def index(request):
@@ -44,23 +45,35 @@ def create(request):
         'title': "Ajouter un artiste"
     })
 
+@login_required
 def edit(request, artist_id):
     artist = get_object_or_404(Artist, id=artist_id)
 
+    # Seulement admin peut modifier l'affiliation troupe
+    is_admin = request.user.is_authenticated and request.user.is_admin
+
     if request.method == "POST":
-        form = ArtistForm(request.POST, instance=artist)
+        if is_admin:
+            form = ArtistForm(request.POST, instance=artist)
+        else:
+            # Formulaire sans troupe pour les non-admin
+            form = ArtistForm(request.POST, instance=artist)
+            form.fields.pop('troupe')
+
         if form.is_valid():
             form.save()
-            messages.info(request, "✅ Artiste modifié avec succès.")
             return redirect('catalogue:artist-show', artist.id)
-        else:
-            messages.error(request, "❌ Une erreur est survenue. Veuillez vérifier le formulaire.")
     else:
-        form = ArtistForm(instance=artist)
+        if is_admin:
+            form = ArtistForm(instance=artist)
+        else:
+            form = ArtistForm(instance=artist)
+            form.fields.pop('troupe')
 
     return render(request, 'artist/form.html', {
         'form': form,
-        'title': f"✏️ Modifier l’artiste : {artist.first_name} {artist.last_name}"
+        'title': f"✏️ Modifier l’artiste : {artist.first_name} {artist.last_name}",
+        'is_admin': is_admin,
     })
 
 def delete(request, artist_id):

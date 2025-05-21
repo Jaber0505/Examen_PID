@@ -3,7 +3,9 @@
 
 {% block content %}
     <div class="form-actions">
-        <a href="{% url 'catalogue:artist-edit' artist.id %}" class="btn btn-primary">✏️ Modifier</a>
+        {% if user.is_authenticated and user.is_admin %}
+            <a href="{% url 'catalogue:artist-edit' artist.id %}" class="btn btn-primary">✏️ Modifier</a>
+        {% endif %}
         <a href="{% url 'catalogue:artist-delete' artist.id %}" class="btn btn-danger">🗑 Supprimer</a>
     </div>
     
@@ -20,8 +22,6 @@
     {% else %}
         <p>Non affilié</p>
     {% endif %}
-
-
 
     <hr>
 

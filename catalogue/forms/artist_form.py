@@ -1,14 +1,13 @@
 from django import forms
-from catalogue.models import Artist
+from catalogue.models import Artist, Troupe
 
 class ArtistForm(forms.ModelForm):
+    troupe = forms.ModelChoiceField(
+        queryset=Troupe.objects.all(),
+        required=False,
+        empty_label="<< Non affilié >>"
+    )
+    
     class Meta:
         model = Artist
-        fields = ['first_name', 'last_name']
-        labels = {
-            'first_name': 'Prénom',
-            'last_name': 'Nom',
-        }
-        widgets = {
-            'types': forms.CheckboxSelectMultiple()
-        }
+        fields = ['first_name', 'last_name', 'troupe']
